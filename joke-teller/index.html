@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jokes A part</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <button id="button">Tell me a joke</button>
+      <audio id="audio" controls hidden></audio>
+    </div>
+    <!-- Voice first then Script -->
+    <script src="voice.js"></script> <!-- I want the voice.js to get loaded before the script.js uses it as else it would throw an error as it has not been loaded yet -->
+    <script src="script.js"></script>
+  </body>
+</html>
